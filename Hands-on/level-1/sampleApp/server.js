@@ -15,6 +15,8 @@
 */
 
 /* Requires node.js libraries */
+
+// This is where dashboard is running
 process.env.NETBEAST = 'localhost:8000'
 
 var express = require('express')
@@ -25,10 +27,13 @@ var beast = require('netbeast')
 var argv = require('minimist')(process.argv.slice(2))
 
 app.get('/bulb/', function (req, res, next) {
-// console.log("tagId is set to " + req.query.color);
-var color = req.query.color || 'FFFFFF'
-  console.log(color)
+  var color = req.query.color || 'FFFFFF'
   setColor(color)
+  next()
+})
+
+app.get('/', function (req, res, next) {
+  res.redirect('/bulb')
   next()
 })
 
