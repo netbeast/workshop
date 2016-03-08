@@ -1,0 +1,75 @@
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* set global font to Open Sans */
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  /*background-image: url(http://gfxzone.net/wp-content/uploads/2014/06/main-background1.jpg); */
+  background-color: #333;
+}
+
+/* header */
+h1 {
+  color: #55acee;
+  text-align: left;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+
+/* button div */
+#buttons {
+  padding-top: 50px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.navbar-logo-img {
+    height: 30px;
+    position: relative;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* start da css for da buttons */
+.jscolor {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.jscolor:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+/* copyright stuffs.. */
+p {
+  text-align: center;
+  color: #55acee;
+  padding-top: 20px;
+}
