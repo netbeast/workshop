@@ -29,19 +29,8 @@ var argv = require('minimist')(process.argv.slice(2))
 
 app.get('/bulb/', function (req, res, next) {
   var color = req.query.color || 'FFFFFF'
+  setTimeout(Off, 5000)
   setColor(color)
-
-  sleep.sleep(1)
-  Off()
-  sleep.sleep(1)
-  On()
-/*  beast('lights').get()
-  .then(function (data) {
-    console.log(data)
-  })
-  .catch(function (error) {
-    if (error) throw error
-  }) */
   next()
 })
 
@@ -59,16 +48,12 @@ var server = app.listen(argv.port || 31416, function () {
 })
 
 function setColor (color) {
-  beast('lights').set({color: '#' + color.toString()})
+  beast('lights').set({power: "on", color: '#' + color.toString()})
 }
 
 function Off () {
-  beast('lights').set({
-          power: "off"
-        })
-}
-function On () {
-  beast('lights').set({
-          power: "on"
-        })
+  beast('lights').set({power: "off"})
+  .catch(function (error) {
+    console.log(error)
+  })
 }
