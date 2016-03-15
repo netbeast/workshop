@@ -29,8 +29,9 @@ var argv = require('minimist')(process.argv.slice(2))
 
 app.get('/bulb/', function (req, res, next) {
   var color = req.query.color || 'FFFFFF'
-  setTimeout(Off, 5000)
+
   setColor(color)
+  setTimeout(Off, 5000)
   next()
 })
 
@@ -52,7 +53,7 @@ function setColor (color) {
 }
 
 function Off () {
-  beast('lights').set({power: "off"})
+  beast('lights').set({power: false})
   .catch(function (error) {
     console.log(error)
   })
