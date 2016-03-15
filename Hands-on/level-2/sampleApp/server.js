@@ -17,7 +17,7 @@
 /* Requires node.js libraries */
 
 // This is where dashboard is running
-process.env.NETBEAST = 'localhost:8000'
+process.env.NETBEAST = '192.168.0.1:80'
 
 var express = require('express')
 var app = express()
