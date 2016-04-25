@@ -46,5 +46,5 @@ var server = app.listen(argv.port || 31416, function () {
 })
 
 function setColor (color) {
-  beast('lights').set({color: '#' + color.toString(), power: true, brightness: 100, hue: 0, saturation: 100})
+  beast('lights').set({color: '#' + color.toString()})
 }
