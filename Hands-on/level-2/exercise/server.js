@@ -22,21 +22,12 @@ process.env.NETBEAST = 'localhost:8000'
 var express = require('express')
 var app = express()
 var beast = require('netbeast')
-var sleep = require('sleep')
 
 // Netbeast apps need to accept the port to be launched by parameters
 var argv = require('minimist')(process.argv.slice(2))
 
 app.get('/bulb/', function (req, res, next) {
-  /*
-   -------------------------------
-        set color variable
-
-              HERE
-
-  --------------------------------
-  */
-  setTimeout(Off, 5000)
+  var color = req.query.color || 'FFFFFF'
   setColor(color)
   next()
 })
@@ -57,20 +48,7 @@ var server = app.listen(argv.port || 31416, function () {
 function setColor (color) {
   /*
    -------------------------------
-        handle color setter
-
-              HERE
-
-  --------------------------------
-   who knows why it doesn't work properly at the second time?
-  */
-}
-
-function Off () {
-
-  /*
-   -------------------------------
-        handle off setter
+        set color variable
 
               HERE
 
