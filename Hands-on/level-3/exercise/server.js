@@ -62,7 +62,9 @@ function setColor (color) {
               HERE
 
   --------------------------------
-   who knows why it doesn't work properly at the second time?
+   if you used the simple same color setter
+   who knows why it doesn't work properly
+   at the second time?
   */
 }
 
