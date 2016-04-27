@@ -19,15 +19,15 @@
 // This is where dashboard is running
 process.env.NETBEAST = 'localhost:8000'
 
-var express = require('express')
+/* TODO: */
 var app = express()
 var beast = require('netbeast')
 
 // Netbeast apps need to accept the port to be launched by parameters
 var argv = require('minimist')(process.argv.slice(2))
 
-app.get('/bulb/', function (req, res, next) {
-  var color = req.query.color || 'FFFFFF'
+app.get(/* TODO: */, function (req, res, next) {
+  var color = /* TODO: */ || 'FFFFFF'
   setColor(color)
   next()
 })
@@ -48,6 +48,7 @@ var server = app.listen(argv.port || 31416, function () {
 function setColor (color) {
   /*
    -------------------------------
+   TODO:
         set color variable
 
               HERE
