@@ -17,10 +17,11 @@
 /* Requires node.js libraries */
 
 // This is where dashboard is running
-process.env.NETBEAST = 'localhost:8000'
+/*
 
-var express = require('express')
-var app = express()
+TODO:
+
+*/
 var beast = require('netbeast')
 var sleep = require('sleep')
 
@@ -29,6 +30,7 @@ var argv = require('minimist')(process.argv.slice(2))
 
 app.get('/bulb/', function (req, res, next) {
   /*
+   TODO:
    -------------------------------
         set color variable
 
@@ -48,7 +50,7 @@ app.get('/', function (req, res, next) {
 
 app.use('/bulb', express.static('public'))
 
-var server = app.listen(argv.port || 31416, function () {
+var server = /* TODO: */ {
   var host = server.address().address
   var port = server.address().port
   console.log('Example app listening at http://%s:%s/bulb', host, port)
@@ -56,6 +58,7 @@ var server = app.listen(argv.port || 31416, function () {
 
 function setColor (color) {
   /*
+    TODO:
    -------------------------------
         handle color setter
 
@@ -70,7 +73,7 @@ function setColor (color) {
 
 function Off () {
 
-  /*
+  /* TODO:
    -------------------------------
         handle off setter
 
