@@ -2,16 +2,22 @@
 This repo contains all the stuff that we're going to use during the workshop.
 
 ## Examples
-the `examples` folder contains the source code of the examples given in the slides
+The `Nodejs-Fundamentals` folder contains the source code of the examples given in the slides.
 
 ## Hands-on
-1. It's organized by levels
-2. Compress the virtual bulb plugin using a terminal (this will be 'terminal1') ->
-    `cd App-Plugin`
-    `beast pkg bulb-plugin-master -p bulb-plugin-master.tar.gz`
-3. Start the dashboard in other terminal ('terminal2') -> `beast start`
-4. In 'terminal1' execute `beast install bulb-plugin-master.tar.gz`
-5. Once it's installed, open it though plugins button in dashboard
-6. Go to `level-1/sampleApp`  in 'terminal1'-> `cd Hands-on/level-1/sampleApp`
-7. Execute `./server.js`
-8. Open the webapp in your browser in http://localhost:XXXX/bulb/
+ It's organized by levels (1, 2 & 3). 
+ 
+###### Level 1
+ Here you'll create a simple plugin that allows you to collect current temperature in London city and 
+ share its value in dashboard.
+ 
+###### Level 2
+ Now you have a sample app that needs to be completed with some code. Then you could control a virtual bulb
+ (or a real one if you have a Lifx or Phillips Hue).
+ 
+###### Level 3
+ Additional complexity over previous example.
+ 
+ 
+ Enjoy it! :+1:
+
