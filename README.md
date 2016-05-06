@@ -1,6 +1,9 @@
 # workshop
 This repo contains all the stuff that we're going to use during the workshop.
 
+<!-- We may change this to use a better collaboration tool with our own font etc -->
+[Course and excercises PPTX](https://github.com/netbeast/workshop)
+
 ## Examples
 The `Nodejs-Fundamentals` folder contains the source code of the examples given in the slides.
 
