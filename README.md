@@ -1,5 +1,9 @@
-# workshop
-This repo contains all the stuff that we're going to use during the workshop.
+# Netbeast workshop
+# Create IoT apps in Node.js
+This repo contains all the stuff that we're going to use during the workshop. Learn about Node.js, Express and MQTT to connect devices. Learn how to run and try out the Netbeast Dashboard.
+
+#### [(40 min) Lecture slides](https://speakerdeck.com/fcojriosbello/meetup-slides)
+#### [(2 hours) Workshop slides and excercises](https://docs.google.com/presentation/d/1_7qD6BJzThP8EkmDAavzTQr3bsB3ISEWeQ-Xd6sh0Mo/pub?start=false&loop=false&delayms=3000)
 
 ## Examples
 The `Nodejs-Fundamentals` folder contains the source code of the examples given in the slides.
@@ -20,8 +24,3 @@ The `Nodejs-Fundamentals` folder contains the source code of the examples given 
 
 
  Enjoy it! :+1:
-
- Here you have the slides links:
-
- - [Presentation (40 min)](https://speakerdeck.com/fcojriosbello/meetup-slides)
- - [Workshop (2 hours)](https://drive.google.com/open?id=0BxkFLGT1_EbNT0cyLXZoLUZubkRLN3pLM0UwVll3N2p0Q1Yw)
